@@ -22,11 +22,6 @@ body {
     linear-gradient(145deg, #000 0%, #01040c 55%, #000 100%);
 }
 
-button,
-input {
-  font: inherit;
-}
-
 .otp-slot {
   direction: ltr;
   font-variant-numeric: tabular-nums;

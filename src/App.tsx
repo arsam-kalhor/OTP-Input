@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import OtpInput from "./OtpInput";
-import { OTP_LENGTH, type OtpStatus } from "./otpUtils";
+import type { OtpStatus } from "./otpUtils";
 
 const CORRECT_OTP = "123456";
 const VERIFICATION_DELAY_MS = 650;
@@ -65,7 +65,7 @@ function App() {
   };
 
   const statusContent = {
-    idle: value.length > 0 ? `${value.length} از ${OTP_LENGTH} رقم` : "",
+    idle: "",
     loading: "در حال بررسی کد…",
     error: "کد واردشده نادرست است؛ دوباره تلاش کنید",
     success: "کد درست است؛ تأیید با موفقیت انجام شد",

@@ -181,7 +181,7 @@ export default function OtpInput({
             aria-invalid={status === "error"}
             aria-label={`رقم ${index + 1} از ${length}`}
             autoComplete={index === 0 ? "one-time-code" : "off"}
-            className={`otp-slot aspect-square min-w-0 flex-1 cursor-default rounded-xl border-2 text-center text-2xl font-semibold caret-transparent outline-none selection:bg-blue-500/30 sm:rounded-2xl sm:text-3xl ${statusAnimation} ${
+            className={`otp-slot aspect-square min-w-0 flex-1 cursor-default rounded-xl border-2 text-center text-xl font-semibold caret-transparent outline-none selection:bg-blue-500/30 sm:rounded-2xl sm:text-[27px] ${statusAnimation} ${
               digit && status !== "success" ? "animate-[popup_250ms_ease-out]" : ""
             } ${appearance}`}
             dir="ltr"
