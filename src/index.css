@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: white;
+  background: #000207;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100dvh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.12), transparent 32rem),
+    linear-gradient(145deg, #000 0%, #01040c 55%, #000 100%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.otp-slot {
+  direction: ltr;
+  font-variant-numeric: tabular-nums;
+  transition:
+    border-color 240ms ease,
+    background-color 240ms ease,
+    box-shadow 280ms ease;
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(6px);
+  }
+
+  70% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes otp-success {
+  0% {
+    transform: translateY(6px);
+    border-color: #2563eb;
+    background-color: rgba(23, 37, 84, 0.45);
+    box-shadow: 0 0 22px rgba(37, 99, 235, 0.3);
+  }
+
+  70% {
+    transform: translateY(-3px);
+    border-color: #10b981;
+    background-color: rgba(2, 44, 34, 0.45);
+    box-shadow: 0 0 18px rgba(16, 185, 129, 0.42);
+  }
+
+  100% {
+    transform: translateY(0);
+    border-color: #10b981;
+    background-color: rgba(2, 44, 34, 0.45);
+    box-shadow: 0 0 14px rgba(16, 185, 129, 0.35);
+  }
+}
+
+.otp-slot-success {
+  animation: otp-success 400ms ease-out both;
+  will-change: transform;
+}
+
+@keyframes otp-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  20%,
+  60% {
+    transform: translateX(-6px);
+  }
+
+  40%,
+  80% {
+    transform: translateX(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

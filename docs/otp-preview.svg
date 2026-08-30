@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">React OTP Verification UI preview</title>
+  <desc id="description">A dark blue OTP verification card with six responsive digit fields.</desc>
+  <defs>
+    <radialGradient id="pageGlow" cx="50%" cy="5%" r="70%">
+      <stop offset="0" stop-color="#2563eb" stop-opacity=".2"/>
+      <stop offset=".6" stop-color="#01040c"/>
+      <stop offset="1" stop-color="#000"/>
+    </radialGradient>
+    <radialGradient id="cardGlow" cx="50%" cy="0" r="90%">
+      <stop offset="0" stop-color="#172554" stop-opacity=".8"/>
+      <stop offset=".55" stop-color="#070812"/>
+      <stop offset="1" stop-color="#04050d"/>
+    </radialGradient>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="34" stdDeviation="45" flood-color="#000" flood-opacity=".7"/>
+    </filter>
+    <filter id="blueGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#2563eb" flood-opacity=".5"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageGlow)"/>
+  <circle cx="800" cy="118" r="235" fill="#2563eb" opacity=".08"/>
+
+  <g filter="url(#cardShadow)">
+    <rect x="420" y="100" width="760" height="700" rx="54" fill="url(#cardGlow)" stroke="#fff" stroke-opacity=".08" stroke-width="2"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="762" y="165" width="76" height="76" rx="24" fill="#3b82f6" fill-opacity=".12" stroke="#60a5fa" stroke-opacity=".28"/>
+    <text x="800" y="215" fill="#dbeafe" font-size="32">✦</text>
+
+    <text x="800" y="300" fill="#fff" font-size="42" font-weight="700" direction="rtl">تأیید شماره موبایل</text>
+    <text x="800" y="346" fill="#94a3b8" font-size="23" direction="rtl">کد شش رقمی ارسال‌شده را وارد کنید</text>
+
+    <rect x="674" y="378" width="252" height="42" rx="21" fill="#3b82f6" fill-opacity=".1" stroke="#60a5fa" stroke-opacity=".25"/>
+    <text x="800" y="406" fill="#bfdbfe" font-size="18">Demo code · 123456</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="38" font-weight="700" text-anchor="middle" fill="#fff">
+    <g filter="url(#blueGlow)">
+      <rect x="510" y="490" width="82" height="82" rx="18" fill="#172554" fill-opacity=".5" stroke="#2563eb" stroke-width="3"/>
+      <text x="551" y="544">1</text>
+    </g>
+    <rect x="610" y="490" width="82" height="82" rx="18" fill="#172554" fill-opacity=".42" stroke="#2563eb" stroke-width="3"/>
+    <text x="651" y="544">2</text>
+    <rect x="710" y="490" width="82" height="82" rx="18" fill="#172554" fill-opacity=".42" stroke="#2563eb" stroke-width="3"/>
+    <text x="751" y="544">3</text>
+    <rect x="810" y="490" width="82" height="82" rx="18" fill="#172554" fill-opacity=".42" stroke="#2563eb" stroke-width="3"/>
+    <text x="851" y="544">4</text>
+    <rect x="910" y="490" width="82" height="82" rx="18" fill="#172554" fill-opacity=".42" stroke="#2563eb" stroke-width="3"/>
+    <text x="951" y="544">5</text>
+    <rect x="1010" y="490" width="82" height="82" rx="18" fill="#172554" fill-opacity=".42" stroke="#2563eb" stroke-width="3"/>
+    <text x="1051" y="544">6</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="800" y="650" fill="#34d399" font-size="22" direction="rtl">✓ کد درست است؛ تأیید با موفقیت انجام شد</text>
+    <text x="800" y="704" fill="#64748b" font-size="19">Accessible · Keyboard friendly · RTL</text>
+  </g>
+</svg>
